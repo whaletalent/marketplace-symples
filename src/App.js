@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Fragment} from 'react';
 import './App.css';
+import {Title} from 'rbx'
+
+import HeroSection from './components/HeroSection'
+import NavPills from './components/NavPills';
+import Grid from './components/Grid';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeroSection></HeroSection>
+      <NavPills></NavPills>
+      <Grid></Grid>
+      <Title>Não perca tempo e peça logo seu Cofee Break!</Title>
     </div>
   );
 }
