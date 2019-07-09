@@ -5,6 +5,8 @@ import {Title} from 'rbx'
 import HeroSection from './components/HeroSection'
 import NavPills from './components/NavPills';
 import Grid from './components/Grid';
+import ImageContainer from './components/ImageContainer'
+import FooterCopyright from './components/FooterCopyright'
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <NavPills></NavPills>
       <Grid></Grid>
       <Title>Não perca tempo e peça logo seu Cofee Break!</Title>
+      <ImageContainer></ImageContainer>
+      <FooterCopyright></FooterCopyright>
     </div>
   );
 }

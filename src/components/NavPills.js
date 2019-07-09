@@ -18,6 +18,7 @@ export default class NavPills extends Component{
         return(
             <Column.Group multiline centered>
                 {
+                    //O Map percorre todos os itens do array do state e retorna com o formato definido no item
                     this.state.categories.map( item => {
                         return(
                             <Column narrow>
