@@ -7,8 +7,7 @@ import Coffee from './pages/Coffee'
 
  
 const Routes = () => (
- 
-    <Switch>
+    <Switch>  
       <Route exact path='/' component={Home} />
       <Route exact path='/coffee-break' component={Coffee} />
     </Switch>
