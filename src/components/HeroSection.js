@@ -1,5 +1,7 @@
 import React, {Component, Fragment} from 'react'
-import {Hero, Container, Title, Input, Tab} from 'rbx'
+import {Hero, Container, Title, Input, Tab, Column} from 'rbx'
+import '../styles/HeroSection.scss'
+
 
 export default class HeroSection extends Component{
     state={
@@ -16,17 +18,19 @@ export default class HeroSection extends Component{
     render(){
         return(
             <Fragment>
-                <Hero color="primary">
+                <Hero color="primary" className="heroFoot">
                     <Hero.Body>
                         <Container>
                         <Title>Logo</Title>
-                        <Input type="text" color='primary' placeholder='Digite o que precisa' />
-                        <Title as="h2" subtitle>
+                            <Column.Group>
+                            </Column.Group>
+                        <Input className="inputHero" type="text" color='primary' placeholder='Digite o que precisa' />
+                        <Title as="h2" subtitle >
                             Hero Subtitle
                         </Title>
                         </Container>
                     </Hero.Body>
-                    <Hero.Foot>
+                    <Hero.Foot >
                         <Container>
                             <Tab.Group as="nav" type="boxed" fullwidth>
                             {
