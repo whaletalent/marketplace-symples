@@ -5,6 +5,7 @@
 // add new colors
 $default-primary: #90ED78 !default;
 $primary-variation: #B4E27A !default;
+$primary-variation2: #379446 !default;
 $default-secondary: #00AAAD !default; 
 
 $layout-margin: 10em;
@@ -12,6 +13,7 @@ $layout-margin: 10em;
 $custom-colors: (
   "default-primary": ($default-primary),
   "primary-variation": ($primary-variation),
+  "primary-variation2": ($primary-variation2),
   "default-secondary": ($default-secondary),
  
 );
@@ -19,7 +21,9 @@ $custom-colors: (
 @import "~bulma/bulma";
 @import "~rbx/rbx";
 
-
+.text{
+  color: $primary-variation2 !important;
+}
 .App {
   text-align: center;
 }

@@ -38,16 +38,14 @@ export default class HeroSection extends Component {
               </Title>
             </Container>
           </Hero.Body>
-          <Hero.Foot>
-            <Container>
-              <Tab.Group as="nav" type="boxed" fullwidth>
+          <Hero.Foot className="categoryMenu">
+            <Container textAlign="centered">
+              <Tab.Group as="nav" type="boxed" fullwidth align="center">
                 {this.state.categories.map(category => {
                   return (
-                    // usar active para o item ativo do menu
-                    <a href={`/${category.link}`}>
-                        <Tab className="categoria">{category.name}</Tab>
-                    </a>
-                  );
+                    // usar active para o item ativo do menu     
+                    <Tab className="categoria">{category.name}</Tab>                   
+                  )
                 })}
               </Tab.Group>
             </Container>

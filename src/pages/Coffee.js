@@ -24,8 +24,10 @@ export default class Coffee extends Component {
   render() {
     return (
         <Fragment>
-            <CategoryBanner/>
-            <Title>Não perca tempo e peça logo seu Cofee Break!</Title>
+            <CategoryBanner
+              imageUrl='https://i.imgur.com/RkhxDSH.jpg'
+            />
+            <Title className="text">Não perca tempo e peça logo seu Cofee Break!</Title>
             <ImageContainer cards={this.state.cards}></ImageContainer>
         </Fragment>    
     )

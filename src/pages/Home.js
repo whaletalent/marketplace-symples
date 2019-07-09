@@ -21,7 +21,7 @@ export default class Home extends Component {
     return (
         <Fragment>
             <Grid></Grid>
-            <Title>Não perca tempo e peça logo seu Cofee Break!</Title>
+            <Title className="text">Não perca tempo e peça logo seu Cofee Break!</Title>
             <ImageContainer cards={this.state.cards}></ImageContainer>
         </Fragment>    
     )

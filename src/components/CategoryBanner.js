@@ -4,15 +4,18 @@ import '../styles/CategoryBanner.scss'
 // import { Container } from './styles';
 
 export default class CategoryBanner extends Component {
+  image= {
+    backgroundImage: `url(${this.props.imageUrl})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  }
   render() {
     return (
         <Fragment>
-            <Title>Coffee-Break</Title>
-            <Column.Group>
-                <Column>
-                   <Notification color="primary">
-                       Imagem aqui
-                   </Notification>
+            <Title className="text">Coffee-Break</Title>
+            <Column.Group style={this.image}>
+                <Column className="bannerImage">
+                   
                 </Column>
             </Column.Group>
         </Fragment>
