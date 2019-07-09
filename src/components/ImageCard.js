@@ -13,7 +13,7 @@ export default class ImageCard extends Component{
                     <Card.Content centered className="cardTitle">
                         <Media>
                         
-                        <Media.Item>
+                        <Media.Item className="textContent">
                             <Title className="textTitle" size={6}>
                                 {this.props.cardTitle}
                             </Title>

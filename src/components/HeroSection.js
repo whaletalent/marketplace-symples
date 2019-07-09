@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react'
 import {Hero, Container, Title, Input, Tab, Column, Image} from 'rbx'
 import '../styles/HeroSection.scss'
-import Logo from '../assets/logo_symplifica-01.png'
+import Logo from '../assets/logo_symplifica.svg'
 
 
 export default class HeroSection extends Component{

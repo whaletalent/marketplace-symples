@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react'
 import {Footer, Content, Column, Image} from 'rbx'
-import LogoFooter from '../assets/logo_symplifica-04.png';
+import LogoFooter from '../assets/logo_symplifica_white.svg';
 import '../styles/Footer.scss'
 
 export default class ImageContainer extends Component{

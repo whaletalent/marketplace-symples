@@ -23,7 +23,7 @@ export default class ImageContainer extends Component{
                                     
                                     {item.subItems.map( subItem =>{
                                         return(
-                                            <p>{subItem}</p>
+                                            <p className="menuSubitem">{subItem}</p>
                                         )
                                     })}
                                 </Column>
