@@ -1,5 +1,6 @@
 import React, {Component, Fragment} from 'react'
 import {Tile, Box, Title} from 'rbx'
+import '../styles/Gird.scss'
 
 export default class Grid extends Component{
     render(){
