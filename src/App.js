@@ -3,21 +3,19 @@ import './App.scss';
 import {Title} from 'rbx'
 
 import HeroSection from './components/HeroSection'
-import NavPills from './components/NavPills';
-import Grid from './components/Grid';
-import ImageContainer from './components/ImageContainer'
 import FooterCopyright from './components/FooterCopyright'
 import FooterMenu from './components/FooterMenu'
+import ImageContainer from './components/FooterCopyright';
+import Home from './pages/Home';
+
+import Routes from './Routes'
 
 function App() {
   return (
     <div className="App">
       <HeroSection></HeroSection>
       <div className="content">
-        {/* <NavPills></NavPills> */}
-        <Grid></Grid>
-        <Title>Não perca tempo e peça logo seu Cofee Break!</Title>
-        <ImageContainer></ImageContainer>
+        <Routes/>        
       </div>
       <FooterMenu/>
       <FooterCopyright></FooterCopyright>
