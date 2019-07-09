@@ -43,6 +43,7 @@ export default class HeroSection extends Component{
                                     )
                                 })
                             }
+                            
                             </Tab.Group>
                         </Container>
                     </Hero.Foot>

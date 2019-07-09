@@ -7,19 +7,19 @@ export default class ImageCard extends Component{
         return(
             <Fragment>
                 <Card centered className='cardContainer'>
-                    <Card.Image>
-                        <Image.Container size="4by3">
-                        <Image src={this.props.cardImage} />
-                        </Image.Container>
-                    </Card.Image>
-                    <Card.Content centered>
+                    
+                        
+                    <Image size="4by3" src={this.props.cardImage} />
+                    <Card.Content centered className="cardTitle">
                         <Media>
                         
                         <Media.Item>
-                            <Title as="p" size={4}>
+                            <Title className="textTitle" size={6}>
                                 {this.props.cardTitle}
                             </Title>
-                            
+                            <Title className="textTitle" subtitle size={6}>
+                                {this.props.price}
+                            </Title>
                         </Media.Item>
                         </Media>
                     </Card.Content>

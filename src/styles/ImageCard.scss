@@ -1,0 +1,16 @@
+@import '../App.scss';
+.cardContainer{
+    box-shadow: none !important;
+    img{
+        border-radius: 1em;
+        max-height: 14em;
+    }
+    .cardTitle{
+        display: flex;
+        justify-content: center;
+    }
+}
+.textTitle{
+    color: rgb(27, 27, 27) !important;
+    text-align: center;
+}

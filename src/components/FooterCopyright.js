@@ -1,12 +1,13 @@
 import React, {Component, Fragment} from 'react'
 import {Footer, Content} from 'rbx'
 import ImageCard from './ImageCard';
+import '../styles/Footer.scss'
 
 export default class ImageContainer extends Component{
     render(){
         return(
             <Fragment>
-                <Footer>
+                <Footer className="copyrightSection">
                     <Content textAlign="centered">
                         <p>
                             Logo Aqui

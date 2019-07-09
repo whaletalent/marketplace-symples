@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react'
 import {Column, Title} from 'rbx'
-import ImageCard from './ImageCard';
+import '../styles/Footer.scss'
 
 export default class ImageContainer extends Component{
     state={
@@ -14,7 +14,7 @@ export default class ImageContainer extends Component{
     render(){
         return(
             <Fragment>
-                <Column.Group multiline centered offset>
+                <Column.Group multiline centered offset className="footerMenuBox">
                     {
                         this.state.items.map( item => {
                             return(

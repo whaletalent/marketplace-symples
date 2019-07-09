@@ -31,8 +31,19 @@ $custom-colors: (
 }
 
 .content{
-  padding: 0 $layout-margin $layout-margin $layout-margin;
+  padding: 0 $layout-margin 5em $layout-margin;
 }
+@media screen and (max-width: 1125px) {
+  .content{
+    padding: 2em;
+  }
+}
+@media screen and (max-width: 600px) {
+    .content{
+      padding: 1em;
+    }
+}
+  
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

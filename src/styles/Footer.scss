@@ -1,0 +1,25 @@
+@import '../App.scss';
+.footerMenuBox{
+    background-color: $primary-variation;
+    padding: 2em $layout-margin 2em $layout-margin;
+    display: flex;
+    margin-bottom: 0 !important; 
+    justify-content: space-between !important;
+    text-align: left;
+}
+@media screen and (max-width: 1125px) {
+    .footerMenuBox{
+        padding: 2em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .footerMenuBox{
+        padding: 1em;
+    }
+}
+.copyrightSection{
+    padding-top: 2em;
+    padding-bottom: 0 !important;
+    margin: 0;
+    background-color: $default-secondary !important;
+}

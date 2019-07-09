@@ -27,7 +27,9 @@ export default class ImageContainer extends Component{
                                     
                                     <ImageCard 
                                         cardImage={card.imageUrl}
-                                        cardTitle={card.Titulo}/>
+                                        cardTitle={card.Titulo}
+                                        price='R$: XX'
+                                        />
                                     
                                 </Column>
                             )
