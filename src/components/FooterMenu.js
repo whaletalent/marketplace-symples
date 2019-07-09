@@ -1,24 +1,35 @@
 import React, {Component, Fragment} from 'react'
-import {Footer, Content} from 'rbx'
+import {Column, Title} from 'rbx'
 import ImageCard from './ImageCard';
 
 export default class ImageContainer extends Component{
     state={
-        itens:[
+        items:[
             {titulo: 'Sobre', subItems:['A Symplifica', 'Termos de uso', 'Política de priivacidade']},
-            {titulo: 'Venda aqui', subItems:['Vantagens', 'Depoimento', 'Política de priivacidade']},
-            {titulo: 'Redes Sociais', subItems:['A Symplifica', 'Termos de uso', 'Política de priivacidade']},
-            {titulo: 'Ajuda', subItems:['A Symplifica', 'Termos de uso', 'Política de priivacidade']},
+            {titulo: 'Venda aqui', subItems:['Vantagens', 'Depoimentos']},
+            {titulo: 'Redes Sociais', subItems:['Instagram', 'Facebook']},
+            {titulo: 'Ajuda', subItems:['Como Comprar', 'Como Vender', 'Atendimento']},
         ]
     }
     render(){
         return(
             <Fragment>
                 <Column.Group multiline centered>
-               
-                    <Column narrow>
-                    
-                    </Column>
+                    {
+                        this.state.items.map( item => {
+                            return(
+                                <Column narrow>
+                                    <Title size={4}> {item.titulo} </Title>
+                                    
+                                    {item.subItems.map( subItem =>{
+                                        return(
+                                            <p>{subItem}</p>
+                                        )
+                                    })}
+                                </Column>
+                            )
+                        })
+                    }
                 
                 </Column.Group>
             </Fragment>

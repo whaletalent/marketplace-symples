@@ -7,6 +7,7 @@ import NavPills from './components/NavPills';
 import Grid from './components/Grid';
 import ImageContainer from './components/ImageContainer'
 import FooterCopyright from './components/FooterCopyright'
+import FooterMenu from './components/FooterMenu'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Grid></Grid>
       <Title>Não perca tempo e peça logo seu Cofee Break!</Title>
       <ImageContainer></ImageContainer>
+      <FooterMenu/>
       <FooterCopyright></FooterCopyright>
     </div>
   );
