@@ -1,3 +1,32 @@
+@import '../App.scss';
 .parent{
     height: 30em !important;
+}
+.destaque1{
+    background-image: url('https://i.imgur.com/RkhxDSH.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-end !important;
+    .background{
+        padding: 1em;
+        cursor: pointer;
+        background-color: #3794465d;
+        &:hover{
+            transition: all .5s;
+            background-color:#379446d5 !important;
+        }
+    }
+    .destaqueTitulo{
+        color: white !important;
+    }
+    
+}
+.destaque2{
+    @extend .destaque1;
+}
+.destaque3{
+    @extend .destaque1;
 }

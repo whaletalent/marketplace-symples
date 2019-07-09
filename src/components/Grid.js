@@ -7,28 +7,34 @@ export default class Grid extends Component{
         return(
             <Fragment>
                 <Tile kind="ancestor" className="parent">
-                    <Tile kind="parent">
-                        <Tile as={Box} kind="child">
-                        <Title as="p">Titulo 1</Title>
-                        <p>
-                            Imagem aqui
-                        </p>
+                    <Tile kind="parent" >
+                        <Tile as={Box} kind="child" className="destaque1">
+                            <div className="background">
+                                <Title as="p" className="destaqueTitulo">Titulo</Title>
+                                <p>
+                                    Subtitulo aqui auehuaehauehuaehuaheuaheae
+                                </p>
+                            </div>
                         
                         </Tile>
                     </Tile>
 
                     <Tile size={4} kind="parent" vertical>
-                        <Tile as={Box} kind="child">
-                        <Title as="p">Titulo 2</Title>
-                        <p>
-                           imagem aqui
-                        </p>
+                        <Tile as={Box} kind="child" className="destaque2">
+                            <div className="background">
+                                <Title as="p" className="destaqueTitulo">Titulo</Title>
+                                <p>
+                                    Subtitulo aqui auehuaehauehuaehuaheuaheae
+                                </p>
+                            </div>
                         </Tile>
-                        <Tile as={Box} kind="child">
-                        <Title as="p">Titulo3</Title>
-                        <p>
-                            Imagem aqui
-                        </p>
+                        <Tile as={Box} kind="child" className="destaque3">
+                            <div className="background">
+                                <Title as="p" className="destaqueTitulo">Titulo</Title>
+                                <p>
+                                    Subtitulo aqui auehuaehauehuaehuaheuaheae
+                                </p>
+                            </div>
                         </Tile>
                     </Tile>
                 </Tile>

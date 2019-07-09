@@ -22,11 +22,13 @@ export default class HeroSection extends Component {
         <Hero color="default-primary" className="heroFoot">
           <Hero.Body>
             <Container>
+              <Link to={`/`}>
               <Column.Group centered>
                 <Column size="one-quarter">
                   <Image class="logoFooter" size="1by3" src={Logo} />
                 </Column>
               </Column.Group>
+              </Link>
               <Input
                 className="inputHero"
                 type="text"
@@ -41,12 +43,17 @@ export default class HeroSection extends Component {
           <Hero.Foot className="categoryMenu">
             <Container textAlign="centered">
               <Tab.Group as="nav" type="boxed" fullwidth align="center">
-                {this.state.categories.map(category => {
-                  return (
-                    // usar active para o item ativo do menu     
-                    <Tab className="categoria">{category.name}</Tab>                   
-                  )
-                })}
+              
+                  {this.state.categories.map(category => {
+                    return (
+                      <Link to={`/${category.link}`}>
+                        <Tab className="categoria">{category.name}</Tab>                   
+                      </Link>
+                      // usar active para o item ativo do menu     
+                    )
+                  })}
+
+                
               </Tab.Group>
             </Container>
           </Hero.Foot>
