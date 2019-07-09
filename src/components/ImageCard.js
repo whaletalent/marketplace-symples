@@ -1,11 +1,12 @@
 import React, {Component, Fragment} from 'react'
 import {Card, Media, Image, Content, Title} from 'rbx'
+import '../styles/ImageCard.scss'
 
 export default class ImageCard extends Component{
     render(){
         return(
             <Fragment>
-                <Card centered>
+                <Card centered className='cardContainer'>
                     <Card.Image>
                         <Image.Container size="4by3">
                         <Image src={this.props.cardImage} />

@@ -1,4 +1,24 @@
-$secondary: #00AAAD; 
+@charset 'utf-8';
+
+@import "~bulma/sass/utilities/functions";
+
+// add new colors
+$default-primary: #90ED78 !default;
+$primary-variation: #B4E27A !default;
+$default-secondary: #00AAAD !default; 
+
+$layout-margin: 10em;
+
+$custom-colors: (
+  "default-primary": ($default-primary),
+  "primary-variation": ($primary-variation),
+  "default-secondary": ($default-secondary),
+ 
+);
+
+@import "~bulma/bulma";
+@import "~rbx/rbx";
+
 
 .App {
   text-align: center;
@@ -10,6 +30,9 @@ $secondary: #00AAAD;
   pointer-events: none;
 }
 
+.content{
+  padding: 0 $layout-margin $layout-margin $layout-margin;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

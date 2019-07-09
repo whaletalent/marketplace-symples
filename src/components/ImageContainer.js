@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react'
 import {Column, Notification} from 'rbx'
 import ImageCard from './ImageCard';
+import '../styles/imageContainer.scss'
 
 export default class ImageContainer extends Component{
     state={
@@ -22,7 +23,7 @@ export default class ImageContainer extends Component{
                     {
                         this.state.cards.map( card => {
                             return(
-                                <Column size='one-third'>
+                                <Column className="cardColumn" size='one-third'>
                                     
                                     <ImageCard 
                                         cardImage={card.imageUrl}

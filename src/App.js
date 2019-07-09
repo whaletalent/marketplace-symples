@@ -13,10 +13,12 @@ function App() {
   return (
     <div className="App">
       <HeroSection></HeroSection>
-      {/* <NavPills></NavPills> */}
-      <Grid></Grid>
-      <Title>Não perca tempo e peça logo seu Cofee Break!</Title>
-      <ImageContainer></ImageContainer>
+      <div className="content">
+        {/* <NavPills></NavPills> */}
+        <Grid></Grid>
+        <Title>Não perca tempo e peça logo seu Cofee Break!</Title>
+        <ImageContainer></ImageContainer>
+      </div>
       <FooterMenu/>
       <FooterCopyright></FooterCopyright>
     </div>

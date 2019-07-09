@@ -18,15 +18,15 @@ export default class HeroSection extends Component{
     render(){
         return(
             <Fragment>
-                <Hero color="primary" className="heroFoot">
+                <Hero color="default-primary" className="heroFoot">
                     <Hero.Body>
                         <Container>
                         <Title>Logo</Title>
                             <Column.Group>
                             </Column.Group>
-                        <Input className="inputHero" type="text" color='primary' placeholder='Digite o que precisa' />
-                        <Title as="h2" subtitle >
-                            Hero Subtitle
+                        <Input className="inputHero" type="text" color='default-primary' placeholder='Digite o que precisa' />
+                        <Title className="subtitle" size="3" subtitle >
+                            Tudo para seu evento
                         </Title>
                         </Container>
                     </Hero.Body>
@@ -37,7 +37,9 @@ export default class HeroSection extends Component{
                                 this.state.categories.map( category => {
                                     return(
                                         // usar active para o item ativo do menu
-                                        <Tab>{category}</Tab>
+                                        <Tab className="categoria">
+                                            {category}
+                                        </Tab>
                                     )
                                 })
                             }

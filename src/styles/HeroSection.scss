@@ -1,9 +1,20 @@
+@import '../App.scss';
 .inputHero{
     margin-bottom: 1em !important;
     border-radius: 3em;
     height: 3em;
     text-align: center;
+    width: 60em;
+}
+.categoria:hover{
+    background-color: darken($default-primary, 50%) !important;
+    color: white !important;
+    border-radius: 3em;
+    transition: all .5s;
 }
 .heroFoot{
     margin-bottom: 2em;
+}
+.subtitle{
+    color: white !important;
 }
