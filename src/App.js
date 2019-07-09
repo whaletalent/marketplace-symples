@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <HeroSection></HeroSection>
-      <NavPills></NavPills>
+      {/* <NavPills></NavPills> */}
       <Grid></Grid>
       <Title>Não perca tempo e peça logo seu Cofee Break!</Title>
       <ImageContainer></ImageContainer>

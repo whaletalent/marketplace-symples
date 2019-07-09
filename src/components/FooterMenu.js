@@ -14,7 +14,7 @@ export default class ImageContainer extends Component{
     render(){
         return(
             <Fragment>
-                <Column.Group multiline centered>
+                <Column.Group multiline centered offset>
                     {
                         this.state.items.map( item => {
                             return(
