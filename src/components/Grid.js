@@ -5,7 +5,7 @@ export default class Grid extends Component{
     render(){
         return(
             <Fragment>
-                <Tile kind="ancestor">
+                <Tile kind="ancestor" className="parent">
                     <Tile kind="parent">
                         <Tile as={Box} kind="child">
                         <Title as="p">Titulo 1</Title>

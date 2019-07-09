@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react'
-import {Hero, Container, Title, Input, Tab, Column} from 'rbx'
+import {Hero, Container, Title, Input, Tab, Column, Image} from 'rbx'
 import '../styles/HeroSection.scss'
+import Logo from '../assets/logo_symplifica-01.png'
 
 
 export default class HeroSection extends Component{
@@ -21,8 +22,10 @@ export default class HeroSection extends Component{
                 <Hero color="default-primary" className="heroFoot">
                     <Hero.Body>
                         <Container>
-                        <Title>Logo</Title>
-                            <Column.Group>
+                            <Column.Group centered>
+                                <Column size="one-quarter">
+                                    <Image class="logoFooter" size="1by3" src={Logo} />
+                                </Column>
                             </Column.Group>
                         <Input className="inputHero" type="text" color='default-primary' placeholder='Digite o que precisa' />
                         <Title className="subtitle" size="3" subtitle >

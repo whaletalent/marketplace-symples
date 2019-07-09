@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react'
-import {Footer, Content} from 'rbx'
-import ImageCard from './ImageCard';
+import {Footer, Content, Column, Image} from 'rbx'
+import LogoFooter from '../assets/logo_symplifica-04.png';
 import '../styles/Footer.scss'
 
 export default class ImageContainer extends Component{
@@ -9,9 +9,11 @@ export default class ImageContainer extends Component{
             <Fragment>
                 <Footer className="copyrightSection">
                     <Content textAlign="centered">
-                        <p>
-                            Logo Aqui
-                        </p>
+                        <Column.Group centered>
+                            <Column size="one-quarter">
+                                <Image size="1by3" src={LogoFooter} />
+                            </Column>
+                        </Column.Group>
                         <p>
                             Symplifica® 2019 CNPJ: 00.000.000/0000-00 • 
                         </p>

@@ -22,4 +22,8 @@
     padding-bottom: 0 !important;
     margin: 0;
     background-color: $default-secondary !important;
+    color: white !important;
+    .logoFooter{
+        filter: brightness(1) !important;
+    }
 }
