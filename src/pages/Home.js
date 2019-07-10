@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import Grid from '../components/Grid'
 import {Title} from 'rbx'
 import ImageContainer from '../components/ImageContainer'
+import LaunchModal from '../components/LaunchModal'
 // import { Container } from './styles';
 
 export default class Home extends Component {
@@ -20,6 +21,7 @@ export default class Home extends Component {
   render() {
     return (
         <Fragment>
+            <LaunchModal/>
             <Grid></Grid>
             <Title className="text">Não perca tempo e peça logo seu Cofee Break!</Title>
             <ImageContainer cards={this.state.cards}></ImageContainer>
