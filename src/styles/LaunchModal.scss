@@ -1,0 +1,35 @@
+@import '../App.scss';
+.popupImage{
+    padding: 1em;
+    border-radius: 2em !important;
+}
+.promocao{
+    background-color: $default-secondary;
+    color: white !important;
+}
+.modalColumns{
+    margin-top: .1em;
+}
+
+.image{
+    margin-bottom: .5em !important;
+}
+.firstColumn{
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 1125px) {
+    .modal-content{
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 600px) {
+    .firstColumn{
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+    }
+}

@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 export default class HeroSection extends Component {
   state = {
     categories: [
-      { name: "Cofee Break", link: "coffee-break" },
+      { name: "Coffee Break", link: "coffee-break" },
       { name: "Infraestrutura", link: "infraestrutura" },
       { name: "Palestrantes", link: "palestrantes" },
       { name: "Locais", link: "locais" },

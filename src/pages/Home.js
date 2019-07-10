@@ -23,7 +23,7 @@ export default class Home extends Component {
         <Fragment>
             {/* <LaunchModal/> */}
             <Grid></Grid>
-            <Title className="text">Não perca tempo e peça logo seu Cofee Break!</Title>
+            <Title className="text">Não perca tempo e contrate também!</Title>
             <ImageContainer cards={this.state.cards}></ImageContainer>
         </Fragment>    
     )

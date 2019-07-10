@@ -1,11 +1,10 @@
 import React, { Component, Fragment } from 'react';
-import Grid from '../components/Grid'
 import {Title} from 'rbx'
 import ImageContainer from '../components/ImageContainer'
 import CategoryBanner from '../components/CategoryBanner';
 // import { Container } from './styles';
 
-export default class Coffee extends Component {
+export default class Musicos extends Component {
   state={
     cards:[
         {imageUrl: 'https://i.imgur.com/RkhxDSH.jpg', Titulo: 'coffeee', price: 'xx'},
@@ -25,10 +24,10 @@ export default class Coffee extends Component {
     return (
         <Fragment>
             <CategoryBanner
-            title="Coffee-break"
+                title="Músicos"
               imageUrl='https://i.imgur.com/RkhxDSH.jpg'
             />
-            <Title className="text">Não perca tempo e escolha nossas melhores ofertas!</Title>
+            <Title className="text">Os melhores músicos em um só lugar!</Title>
             <ImageContainer cards={this.state.cards}></ImageContainer>
         </Fragment>    
     )
