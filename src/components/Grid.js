@@ -10,9 +10,9 @@ export default class Grid extends Component{
                     <Tile kind="parent" >
                         <Tile as={Box} kind="child" className="destaque1">
                             <div className="background">
-                                <Title as="p" className="destaqueTitulo">Titulo</Title>
+                                <Title as="p" className="destaqueTitulo">Cofee-Break: Doceria da Júlia</Title>
                                 <p>
-                                    Subtitulo aqui auehuaehauehuaehuaheuaheae
+                                    Café completo, de Segunda à Sábado, até 19,00 por pessoa
                                 </p>
                             </div>
                         
@@ -22,17 +22,17 @@ export default class Grid extends Component{
                     <Tile size={4} kind="parent" vertical>
                         <Tile as={Box} kind="child" className="destaque2">
                             <div className="background">
-                                <Title as="p" className="destaqueTitulo">Titulo</Title>
+                                <Title as="p" className="destaqueTitulo">Música: Júlia & Sérgio</Title>
                                 <p>
-                                    Subtitulo aqui auehuaehauehuaehuaheuaheae
+                                    A Melhor dupla sertaneja da região. Contrate para seu evento já!
                                 </p>
                             </div>
                         </Tile>
                         <Tile as={Box} kind="child" className="destaque3">
                             <div className="background">
-                                <Title as="p" className="destaqueTitulo">Titulo</Title>
+                                <Title as="p" className="destaqueTitulo">Palestrante: Tim Brand</Title>
                                 <p>
-                                    Subtitulo aqui auehuaehauehuaehuaheuaheae
+                                    Instrutor Financeiro, Mestrado em Society Economy, Harvard
                                 </p>
                             </div>
                         </Tile>

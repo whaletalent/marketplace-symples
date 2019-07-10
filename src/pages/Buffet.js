@@ -7,15 +7,15 @@ import CategoryBanner from '../components/CategoryBanner';
 export default class Buffet extends Component {
   state={
     cards:[
-        {imageUrl: 'https://i.imgur.com/RkhxDSH.jpg', Titulo: 'coffeee', price: 'xx'},
-        {imageUrl: 'https://i.imgur.com/mLkWMOx.jpg', Titulo: 'Dog', price: 'xx'},
-        {imageUrl: 'https://i.imgur.com/S8XcKjA.jpg', Titulo: 'tituloe', price: 'xx'},
-        {imageUrl: 'https://i.imgur.com/kcT3BaH.jpg', Titulo: 'Dog', price: 'xx'},
-        {imageUrl: 'https://i.imgur.com/cN3V2YM.jpg', Titulo: 'Dog', price: 'xx'},
-        {imageUrl: 'https://i.imgur.com/SSEH9wH.jpg', Titulo: 'Dog', price: 'xx'},
-        {imageUrl: 'https://i.imgur.com/kcT3BaH.jpg', Titulo: 'Dog', price: 'xx'},
-        {imageUrl: 'https://i.imgur.com/cN3V2YM.jpg', Titulo: 'Dog', price: 'xx'},
-        {imageUrl: 'https://i.imgur.com/SSEH9wH.jpg', Titulo: 'Dog', price: 'xx'},
+        {imageUrl: 'https://images.pexels.com/photos/2291367/pexels-photo-2291367.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', Titulo: 'Grand Mama', price: '4500,00'},
+        {imageUrl: 'https://images.pexels.com/photos/2291347/pexels-photo-2291347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', Titulo: 'Las Marias', price: '3300,00'},
+        {imageUrl: 'https://images.pexels.com/photos/2286175/pexels-photo-2286175.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', Titulo: 'Formiga Caseira', price: '1000,00'},
+        {imageUrl: 'https://images.pexels.com/photos/5944/food-lunch-mexican-nachos.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', Titulo: 'Bounty Bunny', price: '2300,00'},
+        {imageUrl: 'https://images.pexels.com/photos/2264036/pexels-photo-2264036.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', Titulo: 'Shuratto', price: '1100,00'},
+        {imageUrl: 'https://images.pexels.com/photos/1383787/pexels-photo-1383787.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', Titulo: 'Daniela Buffet', price: '1440,00'},
+        {imageUrl: 'https://images.pexels.com/photos/1121482/pexels-photo-1121482.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', Titulo: "Chef's Rule", price: '1220,00'},
+        {imageUrl: 'https://images.pexels.com/photos/1485806/pexels-photo-1485806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', Titulo: 'Marchiatto', price: '1400,00'},
+        {imageUrl: 'https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', Titulo: 'Silvanna', price: '4500,00'},
         
     ]
     
@@ -25,7 +25,7 @@ export default class Buffet extends Component {
         <Fragment>
             <CategoryBanner
                 title="Buffet"
-              imageUrl='https://i.imgur.com/RkhxDSH.jpg'
+              imageUrl='https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
             />
             <Title className="text">Escolha seu Buffet!</Title>
             <ImageContainer cards={this.state.cards}></ImageContainer>

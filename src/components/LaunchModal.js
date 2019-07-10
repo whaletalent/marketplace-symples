@@ -26,8 +26,8 @@ class MyVerticallyCenteredModal extends React.Component {
               />
             </Image.Container>
             <Title size="6">{this.props.preco}</Title>
-            <Title size="6">Serve 40 pessoas</Title>
-            <Title size="6">Disponível em 02 dias úteis</Title>
+            <Title size="6">props.text</Title>
+            <Title size="6">props.text2</Title>
             <Button color="primary-variation2">Adicionar ao Carrinho</Button>
           </Column>
           {/* produto destaque */}
@@ -39,8 +39,8 @@ class MyVerticallyCenteredModal extends React.Component {
               />
             </Image.Container>
             <Title  size="6">{this.props.preco}</Title>
-            <Title  size="6">Serve 40 pessoas</Title>
-            <Title  size="6">Disponível em 02 dias úteis</Title>
+            <Title  size="6">props.text</Title>
+            <Title  size="6">props.text2</Title>
             <Button color="primary-variation2">Adicionar ao Carrinho</Button>
           </Column>
 
