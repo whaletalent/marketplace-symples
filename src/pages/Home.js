@@ -21,7 +21,7 @@ export default class Home extends Component {
   render() {
     return (
         <Fragment>
-            <LaunchModal/>
+            {/* <LaunchModal/> */}
             <Grid></Grid>
             <Title className="text">Não perca tempo e peça logo seu Cofee Break!</Title>
             <ImageContainer cards={this.state.cards}></ImageContainer>
