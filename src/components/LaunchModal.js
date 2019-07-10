@@ -14,7 +14,7 @@ class MyVerticallyCenteredModal extends React.Component {
       >
 
         <Modal.Header closeButton>
-          <Modal.Title>Adicionar Produto</Modal.Title>
+          <Modal.Title>Contratar: {this.props.produto}</Modal.Title>
         </Modal.Header>
         <Column.Group className="modalColumns">
 
