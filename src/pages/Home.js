@@ -22,6 +22,7 @@ export default class Home extends Component {
     return (
         <Fragment>
             {/* <LaunchModal/> */}
+            <Title className="text">Destaques</Title>
             <Grid></Grid>
             <Title className="text">Não perca tempo e contrate também!</Title>
             <ImageContainer cards={this.state.cards}></ImageContainer>
