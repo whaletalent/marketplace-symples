@@ -3,7 +3,7 @@
     height: 30em !important;
 }
 .destaque1{
-    background-image: url('https://i.imgur.com/RkhxDSH.jpg');
+    background-image: url('https://i.imgur.com/mLkWMOx.jpg');
     background-position: center;
     background-size: cover;
     color: white !important;
@@ -26,7 +26,9 @@
 }
 .destaque2{
     @extend .destaque1;
+    background-image: url('https://images.pexels.com/photos/1309240/pexels-photo-1309240.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
 }
 .destaque3{
     @extend .destaque1;
+    background-image: url('https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
 }

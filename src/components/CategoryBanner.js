@@ -12,7 +12,7 @@ export default class CategoryBanner extends Component {
   render() {
     return (
         <Fragment>
-            <Title className="text">Coffee-Break</Title>
+            <Title className="text">{this.props.title}</Title>
             <Column.Group style={this.image}>
                 <Column className="bannerImage">
                    
