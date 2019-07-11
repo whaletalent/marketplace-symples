@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Fragment } from 'react';
 import { Modal } from 'react-bootstrap'
 import { Button, Title, Column, Image } from 'rbx'
 import '../styles/LaunchModal.scss'
@@ -64,7 +64,7 @@ export default class LaunchModal extends React.Component {
     let modalClose = () => this.setState({ modalShow: false });
 
     return (
-      <div>
+      <Fragment>
         <a
           onClick={() => this.setState({ modalShow: true })}
         >
@@ -78,7 +78,7 @@ export default class LaunchModal extends React.Component {
           produto={this.props.title}
           preco={this.props.price}
         />
-      </div>
+      </Fragment>
     );
   }
 }
