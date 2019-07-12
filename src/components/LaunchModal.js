@@ -15,7 +15,7 @@ class MyVerticallyCenteredModal extends React.Component {
   }
   render() {
     return (
-      <Modal style={{ zIndex: '9999' }}
+      <Modal style={{ zIndex: '9999', padding: '1em' }}
         {...this.props}
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
@@ -27,10 +27,18 @@ class MyVerticallyCenteredModal extends React.Component {
         </Modal.Header>
         <Column.Group className="modalColumns">
 
-          <Column size="half" className="firstColumn" >
+          <Column size="half" className="firstColumn" 
+          
+          >
             <FormModal></FormModal>
           </Column>
-          <Column size="half" className="firstColumn productColumn" >
+          <Column size="half" className="firstColumn"  
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            marginTop: '1em'
+          }}
+          >
             
             <Title size="4">{this.props.produto}</Title>
             <Image.Container>

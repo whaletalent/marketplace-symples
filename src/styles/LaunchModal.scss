@@ -34,7 +34,8 @@
     }
 }
 .productColumn{
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-between !important;
 }
 .Toastify__toast{
     background: $primary-variation2 !important;
