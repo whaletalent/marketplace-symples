@@ -4,6 +4,7 @@ import "../styles/HeroSection.scss";
 import Logo from "../assets/logo_symplifica.svg";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import { FaCartPlus, FaShoppingBag } from "react-icons/fa";
+import CotacoesModal from "./Modals/CotacoesModal";
 
 export default class HeroSection extends Component {
   state = {
@@ -52,7 +53,9 @@ export default class HeroSection extends Component {
                       // usar active para o item ativo do menu     
                       )
                     })}
-                    <Tab className="myBag">Cotações</Tab>
+                    <CotacoesModal>
+                      <Tab className="myBag">Cotações</Tab>
+                    </CotacoesModal>
 
                 
               </Tab.Group>
