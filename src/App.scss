@@ -3,25 +3,36 @@
 @import "~bulma/sass/utilities/functions";
 
 // add new colors
-$default-primary: #90ED78 !default;
-$primary-variation: #B4E27A !default;
+$default-primary: #90ed78 !default;
+$primary-variation: #b4e27a !default;
 $primary-variation2: #379446 !default;
-$default-secondary: #00AAAD !default; 
+$default-secondary: #00aaad !default;
 
 $layout-margin: 10em;
 
 $custom-colors: (
-  "default-primary": ($default-primary),
-  "primary-variation": ($primary-variation),
-  "primary-variation2": ($primary-variation2),
-  "default-secondary": ($default-secondary),
- 
+  "default-primary": (
+    $default-primary
+  ),
+  "primary-variation": (
+    $primary-variation
+  ),
+  "primary-variation2": (
+    $primary-variation2
+  ),
+  "default-secondary": (
+    $default-secondary
+  )
 );
 
 @import "~bulma/bulma";
 @import "~rbx/rbx";
 
-.text{
+.hide {
+  display: none;
+}
+
+.text {
   color: $primary-variation2 !important;
 }
 .App {
@@ -34,20 +45,20 @@ $custom-colors: (
   pointer-events: none;
 }
 
-.content{
+.content {
   padding: 0 $layout-margin 5em $layout-margin;
 }
 @media screen and (max-width: 1125px) {
-  .content{
+  .content {
     padding: 2em;
   }
 }
 @media screen and (max-width: 600px) {
-    .content{
-      padding: 1em;
-    }
+  .content {
+    padding: 1em;
+  }
 }
-  
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

@@ -18,6 +18,21 @@ export default class HeroSection extends Component {
       { name: "Buffet", link: "buffet" }
     ]
   };
+  handleInputChange = e => {
+    const itens = document.querySelectorAll(".cardColumn");
+
+    if (e.target.value.length > 0) {
+      itens.forEach(item => {
+        let itemTitle = item.querySelector(".cardTitle").textContent;
+        let expression = new RegExp(e.target.value, "i");
+
+        if (!expression.test(itemTitle)) item.classList.add("hide");
+        else item.classList.remove("hide");
+      });
+    } else {
+      itens.forEach(item => item.classList.remove("hide"));
+    }
+  };
   render() {
     return (
       <Fragment>
@@ -25,17 +40,18 @@ export default class HeroSection extends Component {
           <Hero.Body>
             <Container>
               <Link to={`/`}>
-              <Column.Group centered>
-                <Column size="one-quarter">
-                  <Image class="logoFooter" size="1by3" src={Logo} />
-                </Column>
-              </Column.Group>
+                <Column.Group centered>
+                  <Column size="one-quarter">
+                    <Image class="logoFooter" size="1by3" src={Logo} />
+                  </Column>
+                </Column.Group>
               </Link>
               <Input
                 className="inputHero"
                 type="text"
                 color="default-primary"
                 placeholder="Digite o que precisa"
+                onChange={this.handleInputChange}
               />
               <Title className="subtitle" size="3" subtitle>
                 Tudo para seu evento
@@ -45,19 +61,17 @@ export default class HeroSection extends Component {
           <Hero.Foot className="categoryMenu">
             <Container textAlign="centered">
               <Tab.Group as="nav" type="boxed" fullwidth align="center">
-                  {this.state.categories.map(category => {
-                    return (
-                      <Link to={`/${category.link}`}>
-                        <Tab className="categoria">{category.name}</Tab>                   
-                      </Link>
-                      // usar active para o item ativo do menu     
-                      )
-                    })}
-                    <CotacoesModal>
-                      <Tab className="myBag">Cotações</Tab>
-                    </CotacoesModal>
-
-                
+                {this.state.categories.map(category => {
+                  return (
+                    <Link to={`/${category.link}`}>
+                      <Tab className="categoria">{category.name}</Tab>
+                    </Link>
+                    // usar active para o item ativo do menu
+                  );
+                })}
+                <CotacoesModal>
+                  <Tab className="myBag">Cotações</Tab>
+                </CotacoesModal>
               </Tab.Group>
             </Container>
           </Hero.Foot>
