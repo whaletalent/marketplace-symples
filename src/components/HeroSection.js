@@ -3,6 +3,7 @@ import { Hero, Container, Title, Input, Tab, Column, Image } from "rbx";
 import "../styles/HeroSection.scss";
 import Logo from "../assets/logo_symplifica.svg";
 import { BrowserRouter as Router, Link } from "react-router-dom";
+import { FaCartPlus, FaShoppingBag } from "react-icons/fa";
 
 export default class HeroSection extends Component {
   state = {
@@ -43,15 +44,15 @@ export default class HeroSection extends Component {
           <Hero.Foot className="categoryMenu">
             <Container textAlign="centered">
               <Tab.Group as="nav" type="boxed" fullwidth align="center">
-              
                   {this.state.categories.map(category => {
                     return (
                       <Link to={`/${category.link}`}>
                         <Tab className="categoria">{category.name}</Tab>                   
                       </Link>
                       // usar active para o item ativo do menu     
-                    )
-                  })}
+                      )
+                    })}
+                    <Tab className="myBag">Cotações</Tab>
 
                 
               </Tab.Group>

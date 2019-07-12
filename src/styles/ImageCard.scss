@@ -11,10 +11,21 @@
         justify-content: center;
         padding-top: 0 !important;
     }
-}
-.textContent{
+    .media{
+        width: 100% !important;
+
+    }
 }
 .textTitle{
+    margin-top: 1em;
     color: rgb(27, 27, 27) !important;
     text-align: center;
+    
+}
+.reviews{
+    margin-top: 0 !important;
+    color: $default-primary !important;
+}
+.cotacaoButton{
+    width: 100%;
 }

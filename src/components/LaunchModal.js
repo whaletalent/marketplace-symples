@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { Modal } from 'react-bootstrap'
 import { Button, Title, Column, Image } from 'rbx'
 import '../styles/LaunchModal.scss'
+import FormModal from './Modals/FormModal';
 
 class MyVerticallyCenteredModal extends React.Component {
   render() {
@@ -14,39 +15,31 @@ class MyVerticallyCenteredModal extends React.Component {
       >
 
         <Modal.Header closeButton>
-          <Modal.Title>Contratar: {this.props.produto}</Modal.Title>
+          <Modal.Title >Solicite cotação</Modal.Title>
         </Modal.Header>
         <Column.Group className="modalColumns">
 
           <Column size="half" className="firstColumn" >
-            <Title size="5">{this.props.produto}</Title>
+            <FormModal></FormModal>
+          </Column>
+          <Column size="half" className="firstColumn productColumn" >
+            
+            <Title size="4">{this.props.produto}</Title>
             <Image.Container>
               <Image className="popupImage"
                 src={this.props.imageUrl}
               />
             </Image.Container>
-            <Title size="6">{this.props.preco}</Title>
+            {/* <Title size="6">{this.props.preco}</Title>
             <Title size="6">props.text</Title>
-            <Title size="6">props.text2</Title>
-            <Button color="primary-variation2">Adicionar ao Carrinho</Button>
+            <Title size="6">props.text2</Title> */}
+            <Button color="primary-variation2">Solicitar Orçamento</Button>
           </Column>
           {/* produto destaque */}
-          <Column size="half" className="firstColumn" >
-            <Title  size="5">Compare!</Title>
-            <Image.Container >
-              <Image className="popupImage"
-                src={this.props.imageUrl}
-              />
-            </Image.Container>
-            <Title  size="6">{this.props.preco}</Title>
-            <Title  size="6">props.text</Title>
-            <Title  size="6">props.text2</Title>
-            <Button color="primary-variation2">Adicionar ao Carrinho</Button>
-          </Column>
 
         </Column.Group>
         <Modal.Footer closeButton>
-          <Button color="primary-variation2">Finalizar Pedido</Button>
+          
         </Modal.Footer>
       </Modal>
     );

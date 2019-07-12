@@ -18,23 +18,23 @@ export default class ImageCard extends Component{
                                 <Title className="textTitle" size={6}>
                                     {this.props.cardTitle}
                                 </Title>
-                                <Title className="textTitle" subtitle size={6}>
+                                {/* <Title className="textTitle" subtitle size={6}>
                                     {this.props.price}
-                                </Title>
-                                    <LaunchModal
-                                        imagem={this.props.cardImage}
-                                        title={this.props.cardTitle}
-                                        price={this.props.price}
-                                    >
-                                        <Button color="default-primary">Solicitar Cotação</Button>
-                                    </LaunchModal>
-                                <Title className="textTitle" color="default-primary" subtitle size={6}>  
+                                </Title> */}
+                                <Title className="textTitle reviews" color="default-primary" subtitle size={6}>  
                                     {
                                        this.props.stars.map( s =>{
-                                           return (<FaStar/>)
+                                           return (<FaStar />)
                                        })
                                     }
                                 </Title>
+                                <LaunchModal
+                                    imagem={this.props.cardImage}
+                                    title={this.props.cardTitle}
+                                    price={this.props.price}
+                                >
+                                    <Button className="cotacaoButton" color="primary-variation2">Solicitar Cotação</Button>
+                                </LaunchModal>
                             </Media.Item>
                             </Media>
                         </Card.Content>
