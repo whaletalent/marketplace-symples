@@ -3,8 +3,16 @@ import { Modal } from 'react-bootstrap'
 import { Button, Title, Column, Image } from 'rbx'
 import '../styles/LaunchModal.scss'
 import FormModal from './Modals/FormModal';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 class MyVerticallyCenteredModal extends React.Component {
+  notify = () => {
+    toast.success("Solicitação enviada!", {
+      position: toast.POSITION.TOP_CENTER
+    });
+    
+  }
   render() {
     return (
       <Modal style={{ zIndex: '9999' }}
@@ -33,7 +41,12 @@ class MyVerticallyCenteredModal extends React.Component {
             {/* <Title size="6">{this.props.preco}</Title>
             <Title size="6">props.text</Title>
             <Title size="6">props.text2</Title> */}
-            <Button color="primary-variation2">Solicitar Orçamento</Button>
+            <Button color="primary-variation2"
+            onClick={this.notify}
+            >
+              Solicitar Orçamento
+            </Button>
+            <ToastContainer />
           </Column>
           {/* produto destaque */}
 

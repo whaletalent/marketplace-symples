@@ -2,10 +2,11 @@ import React, { Component, Fragment } from 'react';
 import Grid from '../components/Grid'
 import {Title} from 'rbx'
 import ImageContainer from '../components/ImageContainer'
-
 // import { Container } from './styles';
 
 export default class Home extends Component {
+  
+  
   state={
     cards:[
         {imageUrl: 'https://images.pexels.com/photos/1864642/pexels-photo-1864642.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', Titulo: 'Juliana Carolina', price: '1200,00', stars: [1,2,3,4,5] },

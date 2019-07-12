@@ -10,6 +10,7 @@ import FooterMenu from './components/FooterMenu'
 import Routes from './Routes'
 
 function App() {
+  
   return (
     <div className="App">
       <HeroSection></HeroSection>
